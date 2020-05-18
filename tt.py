@@ -15,10 +15,3 @@ def Tweet_timeline():
     user = api.user_timeline(user_search)
     for tweet in user:
         print(tweet.text)
-
-Choose = int(input("Press 1 to check someones profile, press 2 for nothing: "))
-if Choose == 1:
-    Tweet_timeline()
-if Choose == 2:
-    print("Fail")
-
